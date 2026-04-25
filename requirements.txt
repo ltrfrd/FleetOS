@@ -1,0 +1,129 @@
+# ===========================================================================
+# FleetOS — Python dependencies
+# Pinned to exact versions for production stability.
+# Last reviewed: early 2025
+#
+# Install:  pip install -r requirements.txt
+# Upgrade:  review each package's changelog before bumping a pin.
+# ===========================================================================
+
+
+# ---------------------------------------------------------------------------
+# Core framework
+# ---------------------------------------------------------------------------
+
+fastapi==0.115.6
+# ASGI web framework. Provides routing, dependency injection, request/response
+# handling, and automatic OpenAPI documentation generation.
+
+uvicorn[standard]==0.34.0
+# ASGI server used to run the FastAPI application.
+# [standard] includes uvloop (faster event loop) and httptools (faster HTTP parser).
+
+gunicorn==23.0.0
+# Production-grade WSGI/ASGI process manager.
+# Used to manage multiple uvicorn worker processes in production deployments.
+# Typical invocation: gunicorn app:app -w 4 -k uvicorn.workers.UvicornWorker
+
+Jinja2==3.1.5
+# Templating engine. Required for any server-side rendered HTML (reports,
+# email templates, etc.).
+
+python-multipart==0.0.20
+# Parses multipart/form-data request bodies (file uploads, HTML forms).
+# Required by FastAPI for Form(...) and File(...) parameters.
+
+
+# ---------------------------------------------------------------------------
+# Database
+# ---------------------------------------------------------------------------
+
+sqlalchemy==2.0.36
+# ORM and SQL toolkit. All models, queries, and sessions use the SQLAlchemy 2.x
+# async-compatible declarative API.
+
+alembic==1.14.0
+# Schema migration tool for SQLAlchemy. All database schema changes must be
+# expressed as Alembic migration scripts — never use create_all() in app code.
+
+psycopg2-binary==2.9.10
+# PostgreSQL adapter for Python. The binary distribution bundles libpq and
+# requires no system-level PostgreSQL installation.
+# Note: use psycopg2 (non-binary) in production Docker images built from
+# source to avoid potential glibc version conflicts.
+
+
+# ---------------------------------------------------------------------------
+# Configuration & environment
+# ---------------------------------------------------------------------------
+
+pydantic==2.10.4
+# Data validation and serialisation library. Used for all request/response
+# schemas (Pydantic v2 API — model_validator, model_config, etc.).
+
+pydantic-settings==2.7.1
+# Extends Pydantic with environment variable and .env file loading.
+# Powers the Settings class in backend/core/config.py.
+
+python-dotenv==1.0.1
+# Loads .env files into os.environ. Used in database.py to populate
+# DATABASE_URL before the SQLAlchemy engine is created.
+
+
+# ---------------------------------------------------------------------------
+# Authentication & security
+# ---------------------------------------------------------------------------
+
+passlib[bcrypt]==1.7.4
+# Password hashing library. [bcrypt] installs the bcrypt backend.
+# Used in backend/core/security.py for hash_password() and verify_password().
+
+python-jose[cryptography]==3.3.0
+# JWT creation and decoding. [cryptography] installs the cryptography backend
+# required for RS256/ES256 support (even though HS256 is used today — ensures
+# the dependency is available if the algorithm is upgraded later).
+# Used in backend/core/security.py for create_*_token() and decode_token().
+
+
+# ---------------------------------------------------------------------------
+# HTTP client
+# ---------------------------------------------------------------------------
+
+httpx==0.28.1
+# Async-capable HTTP client. Used for outbound HTTP calls (webhooks, external
+# APIs) and as the test client for FastAPI endpoints in the test suite.
+
+
+# ---------------------------------------------------------------------------
+# WebSocket
+# ---------------------------------------------------------------------------
+
+websockets==14.1
+# WebSocket protocol implementation used by uvicorn's WebSocket support and
+# for any direct WebSocket client connections in the application.
+
+
+# ---------------------------------------------------------------------------
+# File generation & processing
+# ---------------------------------------------------------------------------
+
+reportlab==4.2.5
+# PDF generation library. Used to produce printable reports (run sheets,
+# payroll summaries, incident reports, etc.).
+
+pillow==11.1.0
+# Image processing library (PIL fork). Required by reportlab for embedding
+# images in PDFs and for any image upload processing.
+
+
+# ---------------------------------------------------------------------------
+# Testing
+# ---------------------------------------------------------------------------
+
+pytest==8.3.4
+# Test runner. All test files live in the tests/ directory and follow the
+# pytest discovery convention (test_*.py / *_test.py).
+
+pytest-asyncio==0.25.2
+# pytest plugin that enables async test functions and async fixtures.
+# Required for testing async FastAPI endpoints and async service functions.
