@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: SchoolConfirmation
-# Purpose: Service layer for school confirmation logic
+# Family: Confirmations
+# Purpose: Pydantic schemas for all confirmation types
 # Status: structure placeholder only
 # -----------------------------------------------------------

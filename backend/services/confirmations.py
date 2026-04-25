@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: SchoolConfirmation
-# Purpose: School confirms AM drop-off and PM departure, tracks unaccounted students
+# Family: Confirmations
+# Purpose: Service layer for all confirmation logic
 # Status: structure placeholder only
 # -----------------------------------------------------------
