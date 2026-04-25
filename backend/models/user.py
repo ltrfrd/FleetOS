@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: User
+# Purpose: Single identity record for every person in the system
 # Status: structure placeholder only
 # -----------------------------------------------------------

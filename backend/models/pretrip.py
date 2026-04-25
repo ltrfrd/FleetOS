@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: PreTrip
+# Purpose: Daily pre-trip inspection submitted by driver before run starts
 # Status: structure placeholder only
 # -----------------------------------------------------------

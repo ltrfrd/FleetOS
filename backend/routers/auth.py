@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Auth
+# Purpose: Login, token refresh, and logout endpoints
 # Status: structure placeholder only
 # -----------------------------------------------------------

@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Incident
+# Purpose: Pydantic schemas for incident report submission and read
 # Status: structure placeholder only
 # -----------------------------------------------------------

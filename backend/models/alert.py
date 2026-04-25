@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Alert
+# Purpose: Four-alert system split between dispatcher and safety manager
 # Status: structure placeholder only
 # -----------------------------------------------------------

@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Incident
+# Purpose: Incident report submitted by driver after run is completed
 # Status: structure placeholder only
 # -----------------------------------------------------------

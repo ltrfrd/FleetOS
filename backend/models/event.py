@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Event
+# Purpose: Immutable append-only event log for every significant system action
 # Status: structure placeholder only
 # -----------------------------------------------------------

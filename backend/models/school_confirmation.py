@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: SchoolConfirmation
+# Purpose: School confirms AM drop-off and PM departure, tracks unaccounted students
 # Status: structure placeholder only
 # -----------------------------------------------------------

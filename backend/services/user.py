@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: User
+# Purpose: Service layer for user creation and retrieval
 # Status: structure placeholder only
 # -----------------------------------------------------------

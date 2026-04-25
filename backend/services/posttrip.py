@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: PostTrip
+# Purpose: Service layer for post-trip inspection logic
 # Status: structure placeholder only
 # -----------------------------------------------------------

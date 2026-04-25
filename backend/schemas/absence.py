@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Absence
+# Purpose: Pydantic schemas for absence submission and read
 # Status: structure placeholder only
 # -----------------------------------------------------------

@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: System
+# Purpose: System admin endpoints for creating districts and operators
 # Status: structure placeholder only
 # -----------------------------------------------------------

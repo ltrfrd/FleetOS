@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Permissions
+# Purpose: Role-based permission check helpers used across all endpoints
 # Status: structure placeholder only
 # -----------------------------------------------------------

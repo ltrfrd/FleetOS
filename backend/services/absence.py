@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Absence
+# Purpose: Service layer for absence submission logic
 # Status: structure placeholder only
 # -----------------------------------------------------------

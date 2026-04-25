@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: Audit
+# Purpose: Tracks every user action across the system with before and after values
 # Status: structure placeholder only
 # -----------------------------------------------------------

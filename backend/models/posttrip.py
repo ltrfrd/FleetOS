@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Family: Student
-# Purpose: Canonical planning entity — created under school, placed into route/run/stop separately via assignments
+# Family: PostTrip
+# Purpose: Two-phase post-trip inspection submitted by driver after run ends
 # Status: structure placeholder only
 # -----------------------------------------------------------
